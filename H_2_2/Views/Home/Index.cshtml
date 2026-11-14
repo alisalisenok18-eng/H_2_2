@@ -1,0 +1,21 @@
+﻿@using H_2_2.Model
+@model VisitCard
+
+@{
+    ViewData["Title"] = "Визитка";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Визитка</title>
+</head>
+<body>
+    <h1>@Model.LastName @Model.FirstName</h1>
+
+    <p><b>Дата рождения:</b> @Model.BirthDate.ToString("dd.MM.yyyy")</p>
+    <p><b>Возраст:</b> @Model.Age лет</p>
+
+    <p><b>Описание:</b> @Model.Description</p>
+</body>
+</html>
